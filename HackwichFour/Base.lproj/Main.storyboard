@@ -38,6 +38,42 @@
             </objects>
             <point key="canvasLocation" x="884" y="339.58020989505252"/>
         </scene>
+        <!--Third View Controller-->
+        <scene sceneID="PCu-TC-eag">
+            <objects>
+                <viewController id="e8v-aW-2p7" customClass="thirdViewController" customModule="HackwichFour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Den-M6-Y5h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLf-Lh-p5D">
+                                <rect key="frame" x="189" y="286" width="42" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5A-66-9Gh">
+                                <rect key="frame" x="185" y="449" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backgroundButton:" destination="e8v-aW-2p7" eventType="touchUpInside" id="h06-3G-mp3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ls3-LD-VCH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BVd-G3-hpe"/>
+                    <connections>
+                        <outlet property="thirdTabLabel" destination="qLf-Lh-p5D" id="HVd-rq-GSV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xa3-8y-mW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="1070.9145427286358"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="GFK-hH-esx">
             <objects>
@@ -78,6 +114,7 @@
                     <connections>
                         <segue destination="FwV-44-T1a" kind="relationship" relationship="viewControllers" id="nvf-g0-D7S"/>
                         <segue destination="wI5-PG-JSW" kind="relationship" relationship="viewControllers" id="KGw-ME-dz1"/>
+                        <segue destination="oeR-hJ-7ab" kind="relationship" relationship="viewControllers" id="lUy-if-ks1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRD-qd-D03" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -122,8 +159,28 @@
             </objects>
             <point key="canvasLocation" x="-55.200000000000003" y="339.58020989505252"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="cjH-lW-Skg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oeR-hJ-7ab" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="icons8-halal_food" id="mYy-xp-9CA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jnw-4d-Fuz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e8v-aW-2p7" kind="relationship" relationship="rootViewController" id="Izb-82-R2O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDJ-82-fyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-482" y="1071"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icons8-about" width="25" height="25"/>
+        <image name="icons8-halal_food" width="32" height="32"/>
     </resources>
 </document>
